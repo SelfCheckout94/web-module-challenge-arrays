@@ -48,7 +48,7 @@ Use the copy function below to do the following:
 function copy(arr){
     const newArr = [];
     for (let i = 0; i < arr.length; i++){
-      newArr.push(arr[i]);
+        newArr.push(arr[i]);
     }
     return newArr;
 }
@@ -66,9 +66,9 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 function is31Flavors(arr){
     if (arr.length === 31){
-      return true;
+        return true;
     }else {
-      return false;
+        return false;
     }
 }
 
@@ -141,11 +141,11 @@ Use the removeFlavorByName function below to do the following:
 
 function removeFlavorByName(arr, flavor){
     for(let i = 0; i < arr.length; i++){
-      if(arr[i] === flavor){
-        arr.splice(i, 1);
-        return arr;
-      }
+        if(arr[i] === flavor){
+            arr.splice(i, 1);
+        }
     }
+    return arr;
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -171,9 +171,9 @@ Use the filterByWord function below to do the following:
 function filterByWord(arr, flavBite){
     const newArr = [];
     for(let i = 0; i < arr.length; i++){
-       if(arr[i].includes(flavBite)){
-         newArr.push(arr[i]);
-       }
+        if(arr[i].includes(flavBite)){
+            newArr.push(arr[i]);
+        }
     }
     return newArr;
 }
